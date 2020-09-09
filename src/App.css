@@ -6,6 +6,7 @@
  box-shadow: 0 16px 78px rgba(0, 0, 0, 0.13);
  position: relative;
  background: #F1F5F6;
+ scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar{

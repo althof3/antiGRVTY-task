@@ -58,26 +58,28 @@ function Spesifikasi() {
   ]
 
   return (
-    <AccordionWrapper title='Spesifikasi'>
-      {accordionItems.map((item, id) => (
-          <AccordionItem 
-            key={id}
-            expanded={expanded === `panel${id}`}
-            onChange={handleChange(`panel${id}`)}
-            header={item.header}
-          >
-            <List>
-              {item.data.map((dimensi, id) => (
-                <CustomListItem
-                  key={id}
-                  primary={dimensi.primary} 
-                  secondary={dimensi.secondary} 
-                />
-              ))}
-            </List>
-          </AccordionItem>
-      ))}
-    </AccordionWrapper>
+    <div id='spesifikasi'>
+      <AccordionWrapper title='Spesifikasi'>
+        {accordionItems.map((item, id) => (
+            <AccordionItem 
+              key={id}
+              expanded={expanded === `panel${id}`}
+              onChange={handleChange(`panel${id}`)}
+              header={item.header}
+            >
+              <List>
+                {item.data.map((dimensi, id) => (
+                  <CustomListItem
+                    key={id}
+                    primary={dimensi.primary} 
+                    secondary={dimensi.secondary} 
+                  />
+                ))}
+              </List>
+            </AccordionItem>
+        ))}
+      </AccordionWrapper>
+    </div>
   )
 }
 

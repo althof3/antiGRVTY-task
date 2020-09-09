@@ -12,17 +12,20 @@ import armRest from '../../assets/img/car_interior/arm_rest.png'
 
 function Interior() {
   return (
-    <PhotoGridWrapper title='Interior'>
-      <FilteredImage text='Extra Large Space for Seven' src={interior} />
-      <FlexWrapper>
-        <FilteredImage text='AC DIGITAL' src={acDigital} />
-        <FilteredImage text='ENGINE START STOP BUTTON (ALPHA & BETA)' src={engineButton} />
-      </FlexWrapper>
-      <FlexWrapper>
-        <FilteredImage text='STUNNING MID DISPLAY COLOR DOT' src={midDisplay} />
-        <FilteredImage text='1ST & 2ND ROW CENTER ARM REST' src={armRest} />
-      </FlexWrapper>
-    </PhotoGridWrapper>
+    <div id='interior'>
+      <PhotoGridWrapper title='Interior'>
+        <FilteredImage text='Extra Large Space for Seven' src={interior} />
+        <FlexWrapper>
+          <FilteredImage text='AC DIGITAL' src={acDigital} />
+          <FilteredImage text='ENGINE START STOP BUTTON (ALPHA & BETA)' src={engineButton} />
+        </FlexWrapper>
+        <FlexWrapper>
+          <FilteredImage text='STUNNING MID DISPLAY COLOR DOT' src={midDisplay} />
+          <FilteredImage text='1ST & 2ND ROW CENTER ARM REST' src={armRest} />
+        </FlexWrapper>
+      </PhotoGridWrapper>
+    </div>
+    
   )
 }
 

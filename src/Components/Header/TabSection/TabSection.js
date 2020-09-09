@@ -24,12 +24,12 @@ function TabSection() {
           scrollButtons="on"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label='Overview' />
-          <Tab label='Tipe & Warna' />
-          <Tab label='Eksterior' />
-          <Tab label='Interior' />
-          <Tab label='Spesifikasi' />
-          <Tab label='Daftar Harga' />
+          <Tab label='Overview' href='#home' />
+          <Tab label='Tipe & Warna' href='#tipewarna' />
+          <Tab label='Eksterior' href='#eksterior' />
+          <Tab label='Interior' href='#interior' />
+          <Tab label='Spesifikasi' href='#spesifikasi' />
+          <Tab label='Daftar Harga' href='#daftarharga' />
         </Tabs>
       </AppBar>
       

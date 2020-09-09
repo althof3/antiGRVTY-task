@@ -21,7 +21,8 @@
   background: #f8f7f7 !important;
   box-shadow: none !important;
 }
-.tabs button{
+.tabs a{
+  text-decoration: none !important;
   font-size: 12px !important;
   text-transform: capitalize !important;
   min-height: 0 !important;
@@ -33,8 +34,9 @@
 }
 
 @media (min-width: 600px){
-  .tabs button{
+  .tabs a{
     min-width: 0 ;
+    text-decoration: none !important;
   }
 }
 

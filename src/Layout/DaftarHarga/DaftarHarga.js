@@ -15,16 +15,18 @@ function DaftarHarga() {
   ]
 
   return (
-    <AccordionWrapper title='Daftar Harga' secondTitle='XL 7' >
-      {accordionItems.map(item => (
-        <div key={item.type} className={style.cardPrice}>
-          <p>{item.type}</p>
-          <p>{item.price}</p>
-        </div>
-      ))}
+    <div id='daftarharga'>
+      <AccordionWrapper title='Daftar Harga' secondTitle='XL 7' >
+        {accordionItems.map(item => (
+          <div key={item.type} className={style.cardPrice}>
+            <p>{item.type}</p>
+            <p>{item.price}</p>
+          </div>
+        ))}
 
-      <Button className={style.button} variant='outlined' >Lihat Semua Harga Mobil</Button>
-    </AccordionWrapper>
+        <Button className={style.button} variant='outlined' >Lihat Semua Harga Mobil</Button>
+      </AccordionWrapper>
+    </div>
   )
 }
 

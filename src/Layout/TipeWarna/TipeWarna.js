@@ -32,7 +32,7 @@ function TipeWarna() {
   }
   
   return (
-    <div className={style.TipeWarna}>
+    <div className={style.TipeWarna} id="tipewarna">
       <Title color='black'>Tipe & Warna</Title>
       <AppBar position="static" className={style.TipeWarna__AppBar} color='default'>
         <Tabs

@@ -10,17 +10,20 @@ import roof from '../../assets/img/car_exterior/roof.png'
 
 function Eksterior() {
   return (
-    <PhotoGridWrapper title='Eksterior'>
-      <FilteredImage text='Bold LED Headlamp With DRL (AUTO ON)' src={headlamp} />
-      <FlexWrapper>
-        <FilteredImage text='MUSCULAR CHROME FRONT GRILLE' src={frontBumper} />
-        <FilteredImage text='GARNISH FRONT BUMPER LOWER' src={lowerFrontBumper} />
-      </FlexWrapper>
-      <FlexWrapper>
-        <FilteredImage text='OUTSIDE DOOR MIRROR' src={doorMirror} />
-        <FilteredImage text='ROOF RAIL' src={roof} />
-      </FlexWrapper>
-    </PhotoGridWrapper>
+    <div id='eksterior'>
+        <PhotoGridWrapper title='Eksterior'>
+        <FilteredImage text='Bold LED Headlamp With DRL (AUTO ON)' src={headlamp} />
+        <FlexWrapper>
+          <FilteredImage text='MUSCULAR CHROME FRONT GRILLE' src={frontBumper} />
+          <FilteredImage text='GARNISH FRONT BUMPER LOWER' src={lowerFrontBumper} />
+        </FlexWrapper>
+        <FlexWrapper>
+          <FilteredImage text='OUTSIDE DOOR MIRROR' src={doorMirror} />
+          <FilteredImage text='ROOF RAIL' src={roof} />
+        </FlexWrapper>
+      </PhotoGridWrapper>
+    </div>
+    
   )
 }
 
