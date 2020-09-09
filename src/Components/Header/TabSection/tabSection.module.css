@@ -9,14 +9,12 @@
   font-size: 13px;
   line-height: 16px;
   padding-bottom: 10px;
-  /* identical to box height */
   border-bottom: 2px dashed #EEEAEA;
   letter-spacing: 0.02em;
   padding: 8px 15px;
 }
 
 .TabSection__AppBar {
-  /* box-shadow: none !important; */
   width: 100%;
   background: #f8f7f7 !important;
   box-shadow: none !important;

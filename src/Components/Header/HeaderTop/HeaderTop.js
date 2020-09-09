@@ -12,6 +12,16 @@ function HeaderTop() {
 
   const [drawer, setDrawer] = useState(false)
 
+  
+  
+  const toogleDrawer = () => {
+    setDrawer((prevState) => !prevState)
+  }
+  
+  const icon = (url) => (
+    <img className={style.icon} alt='phoneIcon' src={url} />
+  )
+
   const listSideMenu = [
     'Beranda', 
     'Tentang Kami', 
@@ -20,20 +30,10 @@ function HeaderTop() {
     'Sparepart', 
     'Hubungi Kami'
   ]
-
-  const icon = (url) => (
-    <img className={style.icon} alt='icon' src={url} />
-  )
-
-  const toogleDrawer = () => {
-    setDrawer((prevState) => !prevState)
-  }
-
   const sideMenu = () => (
     <div
       className={style.sideMenu}
       role="presentation"
-      
     >
       <div style={{textAlign: 'right'}}>
         <IconButton className={style.Menu} onClick={toogleDrawer}>
