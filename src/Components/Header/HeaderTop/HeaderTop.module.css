@@ -1,0 +1,45 @@
+.HeaderTop {
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
+.HeaderTop__textWrap *{
+  margin: 0px 13px;
+  line-height: 13px;
+  font-size: 11px;
+}
+
+.HeaderTop__textWrap h5{
+  font-weight: bold;
+}
+
+img{
+  width: 29px;
+}
+
+.Menu {
+  margin-left: auto !important;
+  background-color: #163C80 !important;
+  width: 37px;
+  height: 37px;
+  position: relative;
+}
+
+.icon{
+  object-fit: contain;
+  width: 15px;
+}
+
+.sideMenu{
+  width: 303px;
+  padding: 8px 15px;
+}
+
+.buttonPhone{
+  margin-top: 10px !important;
+  color: #ffffff !important;
+  background: #163C80 !important;
+  width: 100%;
+}
+

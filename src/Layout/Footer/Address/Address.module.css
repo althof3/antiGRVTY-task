@@ -1,0 +1,30 @@
+.Address{
+  text-align: center;
+  border-top: 1px solid #EEEAEA;
+  padding: 26px 0;
+}
+.Address p{
+  padding: 0 40px;
+}
+.button{
+  margin-top: 10px !important;
+  color: #163C80 !important;
+  border: 2px solid #163C80 !important;
+}
+
+.icon{
+  object-fit: contain;
+  width: 15px;
+}
+
+.buttonPhone{
+  margin-top: 10px !important;
+  color: #ffffff !important;
+  background: #163C80 !important;
+}
+
+.buttonWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

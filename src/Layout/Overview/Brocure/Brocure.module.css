@@ -1,0 +1,38 @@
+.Brocure {
+  background-color: #163C80;
+  height: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brocure__title{
+  width: 300px;
+}
+
+.brocure__detail{
+  color: white;
+  text-align: center;
+}
+
+.Brocure__buttonWrapper{
+  display: flex;
+  flex-direction: row;
+  align-self: initial;
+  margin: 5px;
+}
+
+.Brocure__buttonWrapper button{
+  margin-right: 20px !important;
+}
+
+.unduh{
+  border: 1px solid white !important;
+  color: white !important;
+}
+
+.harga{
+  color: #163C80 !important;
+  background: white !important;
+}

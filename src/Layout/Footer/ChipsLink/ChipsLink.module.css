@@ -1,0 +1,17 @@
+.Chips{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.Chips > *{
+  margin: 3px !important;
+  color: #1F2D3D !important;
+  background-color: transparent !important;
+  
+}
+
+.Chips a{
+  text-decoration: none !important;
+}

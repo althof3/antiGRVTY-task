@@ -1,0 +1,13 @@
+.Copyrights{
+  background: #163C80;
+  height: 204px;
+  margin: 0;
+  padding: 35px 55px;
+  text-align: center;
+}
+
+.Copyrights p{
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 5px;
+}

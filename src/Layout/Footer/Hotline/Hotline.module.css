@@ -1,0 +1,23 @@
+.Hotline{
+  text-align: center;
+  border-top: 1px solid #EEEAEA;
+  padding: 26px 0;
+}
+
+.Hotline h5{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.img1{
+  width: 151px;
+  margin-bottom: 40px;
+}
+
+.img2{
+  width: 236px;
+}
+
+.img3{
+  width: 160px;
+}
