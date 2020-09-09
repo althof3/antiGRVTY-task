@@ -9,6 +9,15 @@ function TabSection() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const tabElem = [
+    {label:'Overview', href:'#home'},
+    {label:'Tipe & Warna', href:'#tipewarna'},
+    {label:'Eksterior', href:'#eksterior'},
+    {label:'Interior', href:'#interior'},
+    {label:'Spesifikasi', href:'#spesifikasi'},
+    {label:'Daftar Harga', href:'#daftarharga'},
+  ]
   return (
     <div className={style.TabSection}>
       <div className={style.TabSection__carType}>XL 7</div>
@@ -24,12 +33,9 @@ function TabSection() {
           scrollButtons="on"
           aria-label="scrollable auto tabs example"
         >
-          <Tab label='Overview' href='#home' />
-          <Tab label='Tipe & Warna' href='#tipewarna' />
-          <Tab label='Eksterior' href='#eksterior' />
-          <Tab label='Interior' href='#interior' />
-          <Tab label='Spesifikasi' href='#spesifikasi' />
-          <Tab label='Daftar Harga' href='#daftarharga' />
+          {tabElem.map(tab => (
+            <Tab key={tab.href} label={tab.label} href={tab.href} />
+          ))}
         </Tabs>
       </AppBar>
       
