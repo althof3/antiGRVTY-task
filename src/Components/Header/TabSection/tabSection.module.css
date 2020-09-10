@@ -19,7 +19,7 @@
   background: #f8f7f7 !important;
   box-shadow: none !important;
 }
-.tabs a{
+.tabs button{
   text-decoration: none !important;
   font-size: 12px !important;
   text-transform: capitalize !important;
@@ -32,7 +32,7 @@
 }
 
 @media (min-width: 600px){
-  .tabs a{
+  .tabs button{
     min-width: 0 ;
     text-decoration: none !important;
   }

@@ -6,6 +6,7 @@ import {Menu, Clear} from '@material-ui/icons';
 import phone from '../../../assets/Icon/phone.svg'
 import mySuzuki from '../../../assets/img/my_suzuki.svg'
 import Hotline from '../../../assets/img/suzuki_hotline.svg'
+import Copyrights from '../../Copyrights/Copyrights';
 
 
 function HeaderTop() {
@@ -59,10 +60,8 @@ function HeaderTop() {
           <img style={{width: '180px'}} src={mySuzuki} alt='car' />
         </ListItem>
       </List>
-      <div style={{marginTop: '120px', textAlign: 'left !important'}}>
-        © 2020 Suzuki Indonesia.
-        <br/>
-        All rights reserved.
+      <div style={{marginTop: '120px', textAlign: 'left'}}>
+        <Copyrights />
       </div>
     </div>
   )

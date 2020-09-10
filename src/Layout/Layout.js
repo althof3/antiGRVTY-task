@@ -6,7 +6,8 @@ import Interior from './Interior/Interior'
 import Spesifikasi from './Spesifikasi/Spesifikasi'
 import DaftarHarga from './DaftarHarga/DaftarHarga'
 import Footer from './Footer/Footer'
-import Copyrights from './Copyrights/Copyrights'
+import Copyrights from '../Components/Copyrights/Copyrights'
+import style from './Layout.module.css'
 
 function Layout() {
   return (
@@ -32,7 +33,9 @@ function Layout() {
       {/* ../Footer section */}
       <Footer />
 
-      <Copyrights />
+      <div className={style.Copyrights}>
+        <Copyrights />
+      </div>
     </div>
   )
 }

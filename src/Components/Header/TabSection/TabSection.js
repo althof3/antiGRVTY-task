@@ -9,14 +9,17 @@ function TabSection() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  const jumpTo = (top) => {
+    document.getElementById('app').scrollTo(0,top)
+  }
 
   const tabElem = [
-    {label:'Overview', href:'#home'},
-    {label:'Tipe & Warna', href:'#tipewarna'},
-    {label:'Eksterior', href:'#eksterior'},
-    {label:'Interior', href:'#interior'},
-    {label:'Spesifikasi', href:'#spesifikasi'},
-    {label:'Daftar Harga', href:'#daftarharga'},
+    {label:'Overview',top: 0},
+    {label:'Tipe & Warna',top: 676},
+    {label:'Eksterior',top: 1106},
+    {label:'Interior',top: 1863},
+    {label:'Spesifikasi',top: 2620},
+    {label:'Daftar Harga',top: 3100}
   ]
   return (
     <div className={style.TabSection}>
@@ -34,7 +37,7 @@ function TabSection() {
           aria-label="scrollable auto tabs example"
         >
           {tabElem.map(tab => (
-            <Tab key={tab.href} label={tab.label} href={tab.href} />
+            <Tab key={tab.top} label={tab.label} onClick={() => jumpTo(tab.top)} />
           ))}
         </Tabs>
       </AppBar>

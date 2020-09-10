@@ -8,14 +8,12 @@ import CloseIcon from '@material-ui/icons/Close';
 function BottomBar() {
 
   const [open, setOpen] = useState(false);
+  const [mobil, setMobil] = useState('XL7');
+  const [tipe, setTipe] = useState('ZETA M/T')
 
   const handleModal = () => {
     setOpen((prevState) => !prevState);
   };
-
-  const [mobil, setMobil] = React.useState('XL7');
-  const [tipe, setTipe] = useState('ZETA M/T')
-
   const handleMobil = (event) => {
     setMobil(event.target.value);
   };
@@ -57,9 +55,9 @@ function BottomBar() {
             <h4>Booking Mobil</h4>
 
             <form className={style.form} noValidate autoComplete="off">
-              <TextField id="standard-basic" label="NAMA LENGKAP" />
-              <TextField id="standard-basic" label="EMAIL" />
-              <TextField id="standard-basic" label="NO. HANDPHONE" />
+              {["NAMA LENGKAP","EMAIL","NO. HANDPHONE"].map(item =>(
+                <TextField key={item} label={item}/>
+              ))}
 
               <FormControl className={style.formControl}>
                 <InputLabel id="demo-simple-select-label">MOBIL</InputLabel>
@@ -80,12 +78,11 @@ function BottomBar() {
                   value={tipe}
                   onChange={handleTipe}
                 >
-                  <MenuItem value={'ZETA M/T'}>ZETA M/T</MenuItem>
-                  <MenuItem value={'ZETA A/T'}>ZETA A/T</MenuItem>
-                  <MenuItem value={'BETA M/T'}>BETA M/T</MenuItem>
-                  <MenuItem value={'BETA A/T'}>BETA A/T</MenuItem>
-                  <MenuItem value={'ALPHA M/T'}>ALPHA M/T</MenuItem>
-                  <MenuItem value={'ALPHA A/T'}>ALPHA A/T</MenuItem>
+                  {['ZETA M/T','ZETA A/T',
+                    'BETA M/T','BETA A/T',
+                    'ALPHA M/T','ALPHA A/T'].map(item => (
+                      <MenuItem key={item} value={item}>{item}</MenuItem>
+                    ))}
                 </Select>
               </FormControl>
             </form>

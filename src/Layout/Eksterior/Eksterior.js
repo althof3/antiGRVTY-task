@@ -23,7 +23,7 @@ function Eksterior() {
       <PhotoGridWrapper title='Eksterior'>
         <Grid container>
           {gridElem.map(item => (
-            <Grid item xs={item.width}>
+            <Grid key={item.text} item xs={item.width}>
               <FilteredImage text={item.text} src={item.src} />
             </Grid>
           ))}
