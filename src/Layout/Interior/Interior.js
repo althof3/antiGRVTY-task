@@ -20,17 +20,16 @@ function Interior() {
   ]
 
   return (
-    <div id='interior'>
-      <PhotoGridWrapper title='Interior'>
-        <Grid container>
-          {gridElem.map(item => (
-            <Grid key={item.text} item xs={item.width}>
-              <FilteredImage text={item.text} src={item.src} />
-            </Grid>
-          ))}
-        </Grid>
-      </PhotoGridWrapper>
-    </div>
+   
+    <PhotoGridWrapper title='Interior'>
+      <Grid container>
+        {gridElem.map(item => (
+          <Grid key={item.text} item xs={item.width}>
+            <FilteredImage text={item.text} src={item.src} />
+          </Grid>
+        ))}
+      </Grid>
+    </PhotoGridWrapper>
     
   )
 }

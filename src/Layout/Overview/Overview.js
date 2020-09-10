@@ -4,7 +4,7 @@ import Brocure from './Brocure/Brocure'
 
 function Section() {
   return (
-    <div id='home'>
+    <div>
       {/* Image Caroussel */}
       <ImageCarousel />
       

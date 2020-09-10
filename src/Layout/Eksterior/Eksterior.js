@@ -19,18 +19,15 @@ function Eksterior() {
   ]
 
   return (
-    <div id='eksterior'>
-      <PhotoGridWrapper title='Eksterior'>
-        <Grid container>
-          {gridElem.map(item => (
-            <Grid key={item.text} item xs={item.width}>
-              <FilteredImage text={item.text} src={item.src} />
-            </Grid>
-          ))}
-        </Grid>
-      </PhotoGridWrapper>
-    </div>
-    
+    <PhotoGridWrapper title='Eksterior'>
+      <Grid container>
+        {gridElem.map(item => (
+          <Grid key={item.text} item xs={item.width}>
+            <FilteredImage text={item.text} src={item.src} />
+          </Grid>
+        ))}
+      </Grid>
+    </PhotoGridWrapper>
   )
 }
 
